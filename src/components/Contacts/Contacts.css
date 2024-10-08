@@ -1,0 +1,115 @@
+section#contacts {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #121212; 
+    color: white;
+}
+
+h5 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.container.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0 2rem;
+    align-items: flex-start;
+    margin-top: 4.5rem;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact__option-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.contact__option h4 {
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    color: var(--color-light);
+}
+
+.contact__option h5 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact__option a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.contact__option a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background: #333;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-primary-variant);
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--color-primary-dark);
+}
