@@ -122,6 +122,29 @@ form button:hover {
 @media (max-width: 768px) {
     .container.contact__container {
         grid-template-columns: 1fr; /* Stack vertically */
+        padding: 0 1rem; /* Adjust padding for smaller screens */
+        margin-top: 3rem; /* Reduce top margin for better fit */
+    }
+
+    .contact__options {
+        align-items: center; /* Center align items */
+    }
+
+    form {
+        align-items: center; /* Center align form inputs */
+    }
+
+    form input,
+    form textarea {
+        width: 100%; /* Ensure inputs take full width */
+        padding: 1rem; /* Adjust padding for smaller screens */
+        margin: 0 auto; /* Center align input elements */
+    }
+
+    form button {
+        width: 100%; /* Make button full width for mobile */
+        padding: 0.7rem; /* Adjust button padding */
+        margin: 0 auto; /* Center align button */
     }
 }
 
@@ -130,16 +153,12 @@ form button:hover {
         font-size: 2rem; /* Adjust heading size */
     }
 
-    .container.contact__container {
-        padding: 0 1rem; /* Reduce padding on small screens */
-    }
-
     form input,
     form textarea {
-        padding: 1rem; /* Adjust padding for smaller screens */
+        padding: 0.8rem; /* Further reduce padding for very small screens */
     }
 
     form button {
-        padding: 0.7rem; /* Adjust button padding */
+        padding: 0.6rem; /* Adjust button padding */
     }
 }
